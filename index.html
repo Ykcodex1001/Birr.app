@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل تطبيق Birr</title>
+    <!-- خط Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome لأيقونة Android -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <style>
+        /* إعادة ضبط الأساسيات */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            width: 35vw;
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 6vw;
+            max-font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        p.subtitle {
+            font-size: 4vw;
+            max-font-size: 16px;
+            color: #ffdfa9;
+            margin-bottom: 30px;
+        }
+
+        .download-btn {
+            padding: 4vw 8vw;
+            max-padding: 15px 40px;
+            font-size: 4.5vw;
+            max-font-size: 20px;
+            background-color: #ffdfa9;
+            color: #000;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #e6c48f;
+        }
+
+        .download-btn i {
+            font-size: 5vw;
+            max-font-size: 24px;
+        }
+
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+            p.subtitle {
+                font-size: 16px;
+            }
+            .download-btn {
+                padding: 15px 40px;
+                font-size: 20px;
+            }
+            .download-btn i {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="لوغو Birr">
+    <h1>تطبيق بر</h1>
+    <p class="subtitle">طريقك للدكر</p>
+    <a href="https://github.com/USERNAME/REPO/raw/main/Birr.apk" class="download-btn" download>
+        <i class="fab fa-android"></i> تحميل التطبيق
+    </a>
+</body>
+</html>
